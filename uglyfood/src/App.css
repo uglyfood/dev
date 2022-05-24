@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  opacity: 50%;
+  mask-image: -webkit-linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
   border-radius: 100px;
   height: 40vmin;
   pointer-events: none;
@@ -23,3 +23,86 @@
 .App-link {
   color: #61dafb;
 }
+
+
+/* .message {
+  -webkit-animation: typing 2s steps(25), flicker 1.5s infinite alternate;
+  animation: typing 2s steps(25), flicker 1.5s infinite alternate;
+  font-family: Bungee Inline, cursive;
+  font-size: 40px;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+  white-space: nowrap;
+  width:60%
+}
+
+@-webkit-keyframes typing {
+  0% {
+      width:0
+  }
+}
+
+@keyframes typing {
+  0% {
+      width:0
+  }
+}
+
+.story {
+  font-family: Bungee Inline, cursive;
+  margin:0 auto
+}
+
+@-webkit-keyframes flicker {
+  0%, 10%, 12%, 15%, 33%, 37%, 8% {
+      text-shadow:0 0 2px #fff, 0 0 5px #fff, 0 0 6px #dce922, 0 0 10px #e2f019
+  }
+
+  10%, 14%, 35% {
+      text-shadow:none
+  }
+}
+
+@keyframes flicker {
+  0%, 10%, 12%, 15%, 33%, 37%, 8% {
+      text-shadow:0 0 2px #fff, 0 0 5px #fff, 0 0 6px #dce922, 0 0 10px #e2f019
+  }
+
+  10%, 14%, 35% {
+      text-shadow:none
+  }
+}
+
+.mybtn {
+  padding:50px
+}
+
+.sub-title {
+  color: hsla(0, 0%, 100%, .856);
+  font-size: 45px;
+  margin-bottom:50px
+}
+
+.content {
+  font-family: Dongle, sans-serif;
+  margin: 0 auto;
+  padding:50px
+}
+
+.ch {
+  color: crimson;
+  font-family: cute font, cursive;
+  font-size: 30px;
+  text-align:center
+}
+
+.bg {
+  background-color: rgba(36, 76, 156, .23);
+  background: linear-gradient(0deg, rgba(2, 0, 36, 0) 10%, rgba(36, 76, 156, .23));
+  border-radius: 20px;
+  color: hsla(0, 0%, 100%, .703);
+  margin: 0 auto;
+  padding: 50px;
+  width: 60%
+} */
