@@ -1,3 +1,0 @@
-# UGLY FOOD
-TEAM 4 Presents.
-### UNSELECTED
