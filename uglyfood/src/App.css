@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Cute+Font&family=Dongle:wght@300;400;700&family=Ubuntu+Condensed&display=swap');
+
 .App {
   text-align: center;
 }
@@ -22,8 +24,17 @@
 
 .App-link {
   color: #61dafb;
+  font-family: 'Ubuntu Condensed', sans-serif;
 }
 
+/* UNSELECTED */
+.topic {
+  font-family: 'Bungee Inline', cursive;
+}
+
+.intro {
+  font-family: 'Cute Font', cursive;
+}
 
 /* .message {
   -webkit-animation: typing 2s steps(25), flicker 1.5s infinite alternate;

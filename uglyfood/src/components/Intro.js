@@ -3,7 +3,7 @@ import React from "react";
 function Intro() {
     return (
         <>
-            <p className="">
+            <p>
                 <h3><strong>우리가 버려졌다고? 그럴리가.</strong></h3><br />
                 어느 바쁜 레스토랑의 구석, <br />
                 어느 한 요리사는 멋진 요리를 만듭니다. <br />
