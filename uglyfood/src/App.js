@@ -6,6 +6,7 @@ import Topic from './components/Topic';
 import Navibar from './components/Navibar';
 import { Navbar, Container, Nav, NavDropdown, Button } from "react-bootstrap";
 import mint from './components/Mintbutton';
+import Chapter2 from './components/Chapter2';
 
 function App() {
   return (
@@ -16,8 +17,17 @@ function App() {
         <div className="topic">
           <Topic />
         </div>
-        <div className="intro">
+        <div className="story">
+          <div className="chapterCnt">
+            <a>- The First Chapter -</a>
+          </div>
           <Intro />
+        </div>
+        <div className="story">
+          <div className="chapterCnt">
+            <a>- Chapter II -</a>
+          </div>
+          <Chapter2 />
         </div>
 
         <div>
