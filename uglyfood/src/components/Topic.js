@@ -3,7 +3,7 @@ import React from "react";
 function Topic() {
     return (
         <>
-            <a>UNSELECTED</a>
+            <span>UNSELECTED</span>
         </>
     )
 };
