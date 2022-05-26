@@ -4,9 +4,9 @@ import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
 function Navibar() {
     return (
         <>
-            <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+            <Navbar fixed="top" collapseOnSelect expand="lg" bg="light" variant="light">
                 <Container>
-                <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+                <Navbar.Brand href="#home">UGLY FOOD</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
@@ -21,9 +21,9 @@ function Navibar() {
                     </NavDropdown>
                 </Nav>
                 <Nav>
-                    <Nav.Link href="#deets">More deets</Nav.Link>
+                    <Nav.Link href="#deets">Learn More</Nav.Link>
                     <Nav.Link eventKey={2} href="#memes">
-                        Dank memes
+                        Support
                 </Nav.Link>
                 </Nav>
                 </Navbar.Collapse>

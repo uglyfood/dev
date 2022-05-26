@@ -4,8 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Intro from './components/Intro';
 import Topic from './components/Topic';
 import Navibar from './components/Navibar';
-import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
-
+import { Navbar, Container, Nav, NavDropdown, Button } from "react-bootstrap";
+import mint from './components/Mintbutton';
 
 function App() {
   return (
@@ -18,6 +18,17 @@ function App() {
         </div>
         <div className="intro">
           <Intro />
+        </div>
+
+        <div>
+          <div className="mb-2">
+            <Button
+              variant="warning" 
+              size="lg"
+              onClick={mint}>
+              MINT NFT
+            </Button>{' '}
+          </div>
         </div>
 
         <a
