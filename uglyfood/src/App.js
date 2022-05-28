@@ -13,7 +13,9 @@ function App() {
     <div className="App">
         <Navibar />
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <div className="logo-bg">
+          <img src={logo} className="App-logo" alt="logo" />
+        </div>
         <div className="topic">
           <Topic />
         </div>
@@ -23,6 +25,7 @@ function App() {
           </div>
           <Intro />
         </div>
+
         <div className="story">
           <div className="chapterCnt">
             <a>- Chapter II -</a>

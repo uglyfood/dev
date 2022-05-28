@@ -3,9 +3,13 @@ import React from "react";
 function Topic() {
     return (
         <>
-            <div className="box">
-                <span>"UNSELECTED"</span>
-            </div>
+            <h1>
+                "U
+                <span className="flicker-slow">NS</span>
+                ELECT
+                <span className="flicker-fast">ED</span>
+                "
+            </h1>
         </>
     )
 };

@@ -3,9 +3,9 @@ import eggy from "../media/eggy.png"
 
 function Character1() {
     return (
-        <>
-            <img src={eggy} className="character" alt="character" />
-        </>
+     
+        <img src={eggy} className="character" />
+        
     )
 }
 
