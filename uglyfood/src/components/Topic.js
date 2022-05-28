@@ -3,7 +3,9 @@ import React from "react";
 function Topic() {
     return (
         <>
-            <span>"UNSELECTED"</span>
+            <div className="box">
+                <span>"UNSELECTED"</span>
+            </div>
         </>
     )
 };

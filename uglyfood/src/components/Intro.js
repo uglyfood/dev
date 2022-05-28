@@ -1,8 +1,10 @@
 import React from "react";
+import Character1 from "./Character1";
 
 function Intro() {
     return (
         <>
+        <div className="storyLayout">
             <p>
                 <h1><strong>우리가 버려졌다고? 그럴리가.</strong></h1><br />
                 어느 바쁜 레스토랑의 구석, <br />
@@ -18,6 +20,10 @@ function Intro() {
                 왜 나를 쓸모없다고 얘기해? 나의 가치는 내가 생각하는대로 내가 정하는거야.<br />
                 선택은 내가해!
             </p>
+            <div>
+                <Character1></Character1>
+            </div>
+        </div>
         </>
     )
 };

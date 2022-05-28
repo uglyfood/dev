@@ -7,7 +7,6 @@ import Navibar from './components/Navibar';
 import { Navbar, Container, Nav, NavDropdown, Button } from "react-bootstrap";
 import mint from './components/Mintbutton';
 import Chapter2 from './components/Chapter2';
-import Character1 from './components/Character1';
 
 function App() {
   return (
@@ -29,7 +28,6 @@ function App() {
             <a>- Chapter II -</a>
           </div>
           <Chapter2 />
-          <Character1 />
         </div>
 
         <div>
@@ -37,7 +35,7 @@ function App() {
             <Button
               variant="warning" 
               size="lg"
-              onClick={mint}>
+              onClick={ mint }>
               MINT NFT
             </Button>{' '}
           </div>

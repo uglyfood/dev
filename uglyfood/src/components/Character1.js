@@ -4,7 +4,7 @@ import eggy from "../media/eggy.png"
 function Character1() {
     return (
         <>
-            <eggy></eggy>
+            <img src={eggy} className="character" alt="character" />
         </>
     )
 }

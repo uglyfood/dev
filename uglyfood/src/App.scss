@@ -1,3 +1,4 @@
+/* ####################################################################################### */
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Cute+Font&family=Dongle:wght@300;400;700&family=Ubuntu+Condensed&display=swap');
 /*
 폰트!!
@@ -115,6 +116,16 @@ h1::after {
   text-align: left;
 }
 
+.storyLayout {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.character {
+  width: 30vmax;
+  padding: 2vw;
+}
 
 
 .mb-2 {
@@ -137,13 +148,14 @@ h1::after {
 }
 
 .App-logo {
-  border-radius: 100px;
+  border-radius: 5vmin;
   height: 40vmin;
   pointer-events: none;
+  background: black;
 }
 
 .App-header {
-  background: rgb(0, 0, 0);
+  background: rgb(211, 211, 211);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -162,7 +174,6 @@ h1::after {
   padding-bottom: 10vh;
 
 }
-
 
 
 /* .message {
