@@ -1,5 +1,5 @@
 import logo from './logo.gif';
-import './App.css';
+import './App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Intro from './components/Intro';
 import Topic from './components/Topic';
