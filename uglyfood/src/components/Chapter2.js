@@ -1,4 +1,5 @@
 import React from "react";
+import Character1 from './Character1'
 
 function Chapter2() {
     return (
@@ -13,6 +14,7 @@ function Chapter2() {
                 왜 나는 버려진걸까?<br />
                 우리는 버려진게 아니야<br /><br />
                 이 갈등의 방향은 누구에게 향하는 걸까?
+                <Character1 />
             </p>
         </>
     )

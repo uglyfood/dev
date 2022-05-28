@@ -90,31 +90,11 @@ h1::after {
     }
 }
 
-@keyframes crack1 {
-    0%, 95% {
-        transform: translate(-50%, -50%);
-    }
-
-    100% {
-        transform: translate(-51%, -48%);
-    }
-}
-
-@keyframes crack2 {
-    0%, 95% {
-        transform: translate(-50%, -50%);
-    }
-
-    100% {
-        transform: translate(-49%, -53%);
-    }
-}
-
-/* 타이핑 이팩트 */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
+// /* 타이핑 이팩트 */
+// @keyframes typing {
+//   from { width: 0 }
+//   to { width: 100% }
+// }
 
 
 .chapterCnt {
@@ -131,6 +111,8 @@ h1::after {
   color: #999;
   border-radius: 30px;
   padding: 4vw;
+  background-color: #fff;
+  text-align: left;
 }
 
 
@@ -147,13 +129,6 @@ h1::after {
   box-shadow: 0 0 1em #1da9cc;
   transition: 0.15s;
 }
-
-
-
-
-
-
-
 
 
 /* 앱 기본 설정들 */
