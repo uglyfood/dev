@@ -1,4 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Cute+Font&family=Dongle:wght@300;400;700&family=Ubuntu+Condensed&display=swap');
+:root {
+    --green: #e2ff3a;
+    --subgreen: #a5d971;
+    --lightgreen: #eff285;
+    --black: #000000;
+    --subblack: #012623;
+    --pink: #f21b1b;
+    --mainfont: "Nanum Pen Script", cursive;
+    --subfont: "Gamja Flower", cursive;
+    --blue: #1da9cc;
+  }
+
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Cute+Font&family=Dongle:wght@300;400;700&family=Ubuntu+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap");
+@import "components/var.css";
+
 /*
 폰트!!
 CSS rules to specify families
@@ -8,153 +23,149 @@ font-family: 'Dongle', sans-serif;
 font-family: 'Ubuntu Condensed', sans-serif;
 */
 
-
 /* UNSELECTED 토픽!! */
 .topic {
-  font-family: 'Bungee Inline', cursive;
+  font-family: var(--mainfont);
   font-size: calc(10px + 5vw);
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
+  letter-spacing: 0.15em; /* Adjust as needed */
   padding: 5vw;
 }
 
 span {
   position: relative;
-  /* font-family: 'Montserrat', Arial, sans-serif; */
-  /* font-size: calc(20px + 5vw);
-  font-weight: 700; */
   color: #fff;
   letter-spacing: 0.02em;
-  /* text-transform: uppercase; */
   text-shadow: 0 0 0.55em #1da9cc;
   user-select: none;
   white-space: nowrap;
-  /* filter: blur(0.007em); */
   animation: shake 2.5s linear forwards;
 }
 
-h1 span{
+h1 span {
   position: absolute;
   top: 0;
   left: 0;
   transform: translate(-50%, -50%);
   -webkit-clip-path: polygon(10% 0%, 44% 0%, 70% 100%, 55% 100%);
-          clip-path: polygon(10% 0%, 44% 0%, 70% 100%, 55% 100%);
+  clip-path: polygon(10% 0%, 44% 0%, 70% 100%, 55% 100%);
 }
 
 h1::before,
 h1::after {
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 0;
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 h1::before {
-    animation: crack1 2.5s linear forwards;
-    -webkit-clip-path: polygon(0% 0%, 10% 0%, 55% 100%, 0% 100%);
-            clip-path: polygon(0% 0%, 10% 0%, 55% 100%, 0% 100%);
+
+  -webkit-clip-path: polygon(0% 0%, 10% 0%, 55% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 10% 0%, 55% 100%, 0% 100%);
 }
 
 h1::after {
-    animation: crack2 2.5s linear forwards;
-    -webkit-clip-path: polygon(44% 0%, 100% 0%, 100% 100%, 70% 100%);
-            clip-path: polygon(44% 0%, 100% 0%, 100% 100%, 70% 100%);
+
+  -webkit-clip-path: polygon(44% 0%, 100% 0%, 100% 100%, 70% 100%);
+  clip-path: polygon(44% 0%, 100% 0%, 100% 100%, 70% 100%);
 }
 
 @keyframes shake {
-    5%, 15%, 25%, 35%, 55%, 65%, 75%, 95% {
-        filter: blur(0.018em);
-        transform: translateY(0.018em) rotate(0deg);
-    }
+  5%,
+  15%,
+  25%,
+  35%,
+  55%,
+  65%,
+  75%,
+  95% {
+    filter: blur(0.018em);
+    transform: translateY(0.018em) rotate(0deg);
+  }
 
-    10%, 30%, 40%, 50%, 70%, 80%, 90% {
-        filter: blur(0.01em);
-        transform: translateY(-0.018em) rotate(0deg);
-    }
+  10%,
+  30%,
+  40%,
+  50%,
+  70%,
+  80%,
+  90% {
+    filter: blur(0.01em);
+    transform: translateY(-0.018em) rotate(0deg);
+  }
 
-    20%, 60% {
-        filter: blur(0.03em);
-        transform: translate(-0.018em, 0.018em) rotate(0deg);
-    }
+  20%,
+  60% {
+    filter: blur(0.03em);
+    transform: translate(-0.018em, 0.018em) rotate(0deg);
+  }
 
-    45%, 85% {
-        filter: blur(0.03em);
-        transform: translate(0.018em, -0.018em) rotate(0deg);
-    }
+  45%,
+  85% {
+    filter: blur(0.03em);
+    transform: translate(0.018em, -0.018em) rotate(0deg);
+  }
 
-    100% {
-        transform: translate(0) rotate(0deg);
-    }
+  100% {
+    transform: translate(0) rotate(0deg);
+  }
 }
 
 @keyframes crack1 {
-    0%, 95% {
-        transform: translate(-50%, -50%);
-    }
+  0%,
+  95% {
+    transform: translate(-50%, -50%);
+  }
 
-    100% {
-        transform: translate(-51%, -48%);
-    }
+  100% {
+    transform: translate(-51%, -48%);
+  }
 }
 
 @keyframes crack2 {
-    0%, 95% {
-        transform: translate(-50%, -50%);
-    }
+  0%,
+  95% {
+    transform: translate(-50%, -50%);
+  }
 
-    100% {
-        transform: translate(-49%, -53%);
-    }
+  100% {
+    transform: translate(-49%, -53%);
+  }
 }
-
-/* 타이핑 이팩트 */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
 
 .chapterCnt {
-  font-family: 'Dongle', sans-serif;
+  font-family: "Dongle", sans-serif;
   font-size: calc(20px + 2vmin);
-  color: rgb(155, 5, 5);
+  color: var(--pink);
   margin-bottom: 2vh;
 }
 
 /* 챕터1 소개글!! */
 .story {
   margin: 2vh;
-  font-family: 'Cute Font', cursive;
-  background-color: rgba(255,253,80,.8);
-  box-shadow:  0 0 0.99em #1da9cc;;
+  font-family: var(--subfont);
+  background-color: var(--green);
+  box-shadow: 0 0 0.99em var(--blue);
   color: black;
   border-radius: 30px;
   padding: 4vw;
 }
 
 .mb-2 {
-  font-family: 'Bungee Inline', cursive;
+  font-family: "Bungee Inline", cursive;
   margin-top: 50px;
   border: none;
   border-radius: 0.3rem;
-  box-shadow: 0 0 0.55em #1da9cc;
+  box-shadow: 0 0 0.55em var(--blue);
 }
 
 .mb-2:hover {
-  box-shadow: 0 0 1em #1da9cc;
+  box-shadow: 0 0 1em var(--blue);
   transition: 0.15s;
 }
-
-
-
-
-
-
-
-
 
 /* 앱 기본 설정들 */
 .App {
@@ -182,13 +193,10 @@ h1::after {
 .App-link {
   font-size: 17px;
   font-weight: 800;
-  color: #61dafb;
-  font-family: 'Ubuntu Condensed', sans-serif;
+  color: var(--blue);
+  font-family: "Ubuntu Condensed", sans-serif;
   padding-bottom: 10vh;
-
 }
-
-
 
 /* .message {
   -webkit-animation: typing 2s steps(25), flicker 1.5s infinite alternate;

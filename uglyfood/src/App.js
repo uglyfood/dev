@@ -1,5 +1,5 @@
 import logo from './logo.gif';
-import './App.css';
+import './App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Intro from './components/Intro';
 import Topic from './components/Topic';
@@ -13,7 +13,9 @@ function App() {
     <div className="App">
         <Navibar />
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <div className="logo-bg">
+          <img src={logo} className="App-logo" alt="logo" />
+        </div>
         <div className="topic">
           <Topic />
         </div>
@@ -23,6 +25,7 @@ function App() {
           </div>
           <Intro />
         </div>
+
         <div className="story">
           <div className="chapterCnt">
             <a>- Chapter II -</a>
@@ -35,7 +38,7 @@ function App() {
             <Button
               variant="warning" 
               size="lg"
-              onClick={mint}>
+              onClick={ mint }>
               MINT NFT
             </Button>{' '}
           </div>
