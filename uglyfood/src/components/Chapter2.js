@@ -1,5 +1,5 @@
 import React from "react";
-import Character1 from "./Character1";
+import Character2 from "./Character2";
 
 
 function Chapter2() {
@@ -20,7 +20,7 @@ function Chapter2() {
                         <h3><strong>이 갈등의 방향은 누구에게 향하는 걸까?</strong></h3>
                     </p>
                 </div>
-                <Character1 />
+                <Character2 />
             </div>
         </>
     )
