@@ -6,7 +6,7 @@ function Topic() {
             <h1>
                 "U
                 <span className="flicker-slow">N</span>
-                -SELECT
+                SELECT
                 <span className="flicker-fast">ED</span>
                 "
             </h1>

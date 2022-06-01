@@ -4,7 +4,7 @@ import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
 function Navibar() {
     return (
         <>
-            <Navbar fixed="top" collapseOnSelect expand="lg" bg="light" variant="light">
+            <Navbar fixed="top" collapseOnSelect expand="lg" bg="dark" variant="dark">
                 <Container>
                 <Navbar.Brand href="#home">UGLY FOOD</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
