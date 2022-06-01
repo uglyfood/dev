@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Cute+Font&family=Dongle:wght@300;400;700&family=Ubuntu+Condensed&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@900&display=swap');
 
 /*
 폰트!!
@@ -8,6 +9,7 @@ font-family: 'Bungee Inline', cursive;
 font-family: 'Cute Font', cursive;
 font-family: 'Dongle', sans-serif;
 font-family: 'Ubuntu Condensed', sans-serif;
+font-family: 'Gothic A1', sans-serif;
 */
 
 $green: #e2ff3a;
@@ -16,12 +18,13 @@ $lightgreen: #eff285;
 $black: #000000;
 $subblack: #012623;
 $pink: #f21b1b;
-$mainfont: "Nanum Pen Script", cursive;
-$subfont: "Gamja Flower", cursive;
+$mainfont: 'Gothic A1', sans-serif;
+$subfont: 'Gothic A1', sans-serif;
 $blue: #1da9cc;
 
 
 .logo-bg {
+padding-top: 10%;
   background: $black;
   width: 100%;
 }
@@ -33,10 +36,10 @@ $blue: #1da9cc;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
+  letter-spacing: .10em; /* Adjust as needed */
   padding: 5%;
   text-shadow: 1px 0px 4px $lightgreen, 2px 0px 4px $lightgreen, 3px 0px 4px $green, 2px 0px 3px $green, 2px 3px 15px $green, 2px 0px 15px, 5px 0px 25px, 10px 0vw 150px $green, 50px 0vw 100px $green;
-  color: $black;
+  color: $pink;
 }
 
 
@@ -75,7 +78,7 @@ $blue: #1da9cc;
   font-size: calc(5px + 1.5vmin);
   // background-color: $green;
   // box-shadow: 0 0 0.99em $blue;
-  color: $black;
+  color: white;
   // border-radius: 30px;
   padding: 4vw;
   text-align: left;
@@ -107,7 +110,7 @@ $blue: #1da9cc;
 
 
 .story, .mb-2 {
-  background: $green;
+  background: $black;
   position: relative;
   border-radius: 8px;
   box-shadow: 0 0 0 1px rgba(0,0,0,.01);
@@ -123,17 +126,29 @@ $blue: #1da9cc;
     width: 100%;
     transform: scale(1.02) translateZ(0);
     filter: blur(10px);
+    // background: linear-gradient(
+    //   to left,
+    //   #ff5770,
+    //   #e4428d,
+    //   #c42da8,
+    //   #9e16c3,
+    //   #6501de,
+    //   #9e16c3,
+    //   #c42da8,
+    //   #e4428d,
+    //   #ff5770
+    // );
     background: linear-gradient(
       to left,
-      #ff5770,
-      #e4428d,
-      #c42da8,
-      #9e16c3,
-      #6501de,
-      #9e16c3,
-      #c42da8,
-      #e4428d,
-      #ff5770
+      #fff,
+      #fff0ff,
+      $subgreen,
+      $green,
+      #e0c7ff,
+      #e997ff,
+      #ceabc7,
+      #ff83bd,
+      #ffd7dd
     );
     background-size: 200% 200%;
     animation: animateGlow 1.25s linear infinite;
@@ -164,13 +179,12 @@ p {
   border-radius: 3vmin;
   height: 40vmin;
   pointer-events: none;
-  background: $black;
 }
 
 .App-header {
   position: relative;
   z-index: 0;
-  background: white;
+  background: $green;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -187,4 +201,8 @@ p {
   color: $blue;
   font-family: "Ubuntu Condensed", sans-serif;
   padding-bottom: 10vh;
+}
+
+h2 {
+  color: $green;
 }
